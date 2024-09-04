@@ -31,7 +31,6 @@ def url_hook(some_str):
 
 
 sys.path_hooks.append(url_hook)
-print(sys.path_hooks)
 
 
 class URLLoader:
@@ -45,4 +44,5 @@ class URLLoader:
         exec(code, module.__dict__)
 
 
-sys.path.append("http://localhost:8000")
+sys.path.append("http://localhost:8000/")
+
